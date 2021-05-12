@@ -18,31 +18,46 @@
 
     <div class="container">
 
-        <h1 class=" display-6 text-primary">Trabalhando com Arrays Multidimensionais</h1>
+        <h1 class=" display-6 text-primary">Arrays Multidimensionais: Incluindo e excluíndo valores</h1>
         <hr>
 
         <script>
 
+            //Criando Array
             let compras = Array()
 
-            //Criando o primeiro índice (legumes)
+            //Criar o primeiro índice do Array (legumes)
             compras['legumes'] = Array('Batata', 'Cenoura', 'Cebola')
-            //Criando o segundo índice (frutas)
-            compras['frutas'] = Array('Morango', 'Laranja', 'Abacaxi')
 
-            //Verificação
+            //Criar o segundo índice do Array (frutas)
+            compras['frutas'] = Array('Morango', 'Mamão', 'Abacaxi')
+
+            //Incluir no Ínicio
+            compras['frutas'].unshift('Laranja')
+
+            //Incluir no Final
+            compras['legumes'].push('Beterraba')
+
+
+            //Mostrar Array
             console.log(compras)
 
-            //Mostrar legumes e frutas
-            document.write(`Legumes: ${compras['legumes'][0]}<br>`)
-            document.write(`Frutas: ${compras['frutas'][1]} `)
-           
+            //Ecluir no início (legumes)
+            compras['legumes'].pop()
+
+            //Excluir no final (Frutas)
+            compras['frutas'].shift()
+
+            //Saída
+            document.write(`Legumes: ${compras['legumes']}<br>`)
+            document.write(`Frutas: ${compras['frutas']}<br>`)
+
         </script>
 
-        
 
 
-        
+
+
     </div>
 
 

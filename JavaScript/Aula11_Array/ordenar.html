@@ -18,25 +18,61 @@
 
     <div class="container">
 
-        <h1 class=" display-6 text-primary">Trabalhando com Arrays Multidimensionais</h1>
+        <h1 class=" display-6 text-primary">Trabalhando com Arrays: Método ordenar</h1>
         <hr>
 
         <script>
 
-            let compras = Array()
+            //Criar array
+            let listaCompras = Array()
 
-            //Criando o primeiro índice (legumes)
-            compras['legumes'] = Array('Batata', 'Cenoura', 'Cebola')
-            //Criando o segundo índice (frutas)
-            compras['frutas'] = Array('Morango', 'Laranja', 'Abacaxi')
+            //Inserindo os valores
+            listaCompras[0] = 'Arroz'
+            listaCompras[1] = 'Feijão'
+            listaCompras[2] = 'Café'
+            listaCompras[3] = 'Pão'
 
-            //Verificação
-            console.log(compras)
 
-            //Mostrar legumes e frutas
-            document.write(`Legumes: ${compras['legumes'][0]}<br>`)
-            document.write(`Frutas: ${compras['frutas'][1]} `)
-           
+            //Mostrar o Array
+            console.log(listaCompras)
+
+            //Colocando em ordem
+            ordem_alfabetica = listaCompras.sort()
+            console.log(listaCompras)
+
+            //Criar um array numérico
+            let listaNumeros = Array()
+
+            //Inserindo os valores
+            listaNumeros[0] = 4
+            listaNumeros[1] = 10
+            listaNumeros[2] = 5
+            listaNumeros[3] = 1
+
+            //Mostrar os valores
+            console.log(listaNumeros)
+
+            //Ordenar
+            ordem_numerica = listaNumeros.sort(ordenar)
+            console.log(ordem_numerica)
+
+            //Função importante!!!
+            function ordenar(a, b){
+                return a-b
+            }
+
+            //Saída
+            document.write(`Lista de Compras: ${ordem_alfabetica}<br>`)
+            document.write(`Lista numérica: ${ordem_numerica}`)
+
+
+
+
+
+            
+
+
+            
         </script>
 
         

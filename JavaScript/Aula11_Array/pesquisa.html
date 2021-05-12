@@ -18,25 +18,39 @@
 
     <div class="container">
 
-        <h1 class=" display-6 text-primary">Trabalhando com Arrays Multidimensionais</h1>
+        <h1 class=" display-6 text-primary">Trabalhando com Arrays: Método de Pesquisa</h1>
         <hr>
 
         <script>
+            let lista = Array()
 
-            let compras = Array()
+            //Inserindo dados
+            lista[0] = 'Arroz'
+            lista[1] = 'Feijão'
+            lista[2] = 'Café'
+            lista[3] = 'Pão'
 
-            //Criando o primeiro índice (legumes)
-            compras['legumes'] = Array('Batata', 'Cenoura', 'Cebola')
-            //Criando o segundo índice (frutas)
-            compras['frutas'] = Array('Morango', 'Laranja', 'Abacaxi')
+            //Saída
+            document.write(lista)
+            document.write('<br>')
 
-            //Verificação
-            console.log(compras)
+            //Verificar um elemento no array
+            let indice = lista.indexOf('Feijão')
 
-            //Mostrar legumes e frutas
-            document.write(`Legumes: ${compras['legumes'][0]}<br>`)
-            document.write(`Frutas: ${compras['frutas'][1]} `)
-           
+            if (indice === -1) {
+                document.write('O valor não existe no Array!')
+            } else {
+                document.write(`
+                O valor existe! <br>
+                Está na posição: ${indice}<br>
+                Seu valor é: ${lista[indice]}
+                `)
+            }
+
+
+
+
+            
         </script>
 
         
