@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="display-6 mt-4 text-primary">Array dentro de uma Tabela</h1>
+
+        <div id="conteudo" class="lead">
+
+            <table id="tabela" class="table table-striped bordered">
+
+                <!--Linha 0-->
+                <thead>
+                    <tr>
+                      <th>Primeiro Nome</th>
+                      <th>Segundo Nome</th>
+                      <th>Idade</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td>
+                      </tr>
+                   
+                  </tbody>
+            </table>
+
+        </div>
+
+        <script>
+
+            //Declarando meu Array
+            let meuArray = [
+                ['Maria', 'Silva', 50],
+                ['João', 'Fernandes', 40],
+                ['José', 'Ferreira', 30],
+            ]
+
+            //Capturando os Valores
+            let tabela = document.getElementById('tabela')
+            
+
+            //Percorrendo as linhas
+            //Usando propriedades Rows e Cells
+            for (let linha = 1; linha < tabela.rows.length; linha++) {
+                
+                //Percorrendo as colunas
+                for (let coluna = 0; coluna < tabela.rows[linha].cells.length; coluna++) {
+                    tabela.rows[linha].cells[coluna].innerHTML = meuArray[linha-1][coluna]                    
+                }
+                
+            }
+        </script>
+
+        
+
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
