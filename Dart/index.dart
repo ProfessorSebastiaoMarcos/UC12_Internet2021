@@ -26,5 +26,12 @@ void main() {
   bool vf = true;
   bool fv = false;
 
-  
+  //Saída interpolada
+  //Só colocamos {} na interpolação se a variável for composta
+  print('Seu nome: $novoNome');
+  print('Nascimento: $ano');
+  print('Sua altura: $altura');
+  print('Seus cpf: $CPF');
+  print('Resultado fv: $fv');
+  print('Resultado vf: $vf');
 }
