@@ -18,5 +18,17 @@ void main() {
     }
   }
   print('----------------------------------------------------');
-  
+
+  //Varredura em Array
+  var filmes = [
+    'Matrix',
+    'Uma vida iluminada',
+    'Teoria de tudo',
+    'Divertidamente'
+  ];
+
+  //loop
+  for (var filme in filmes) {
+    print(filme);
+  }
 }
