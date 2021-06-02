@@ -21,7 +21,7 @@ void main() {
   retangulo1.altura = 10.0;
 
   double area = retangulo1.calcularAreaRetangulo();
-  print('A área do triângulo é: ${area}m²');
+  print('A área do Retângulo é: ${area}m²');
 
   //Saída
 }
