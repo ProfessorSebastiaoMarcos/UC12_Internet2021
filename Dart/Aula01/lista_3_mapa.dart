@@ -37,12 +37,12 @@ void main() {
   print('Mapa 1: $mapa');
   print('Mapa 2: $mapa2');
   print('Mapa Estados: $estados');
-  print('----------------------------------------------');
+  print('--------------------------------------------------');
 
   //Imprimindo as chaves do Mapa 1: keys e values
   print('Chaves do Mapa 1: ${mapa.keys}');
   print('Chaves do Mapa 1: ${mapa.values}');
-  print('----------------------------------------------');
+  print('--------------------------------------------------');
 
   //Verificalçao de existência de chave
   bool temChave = mapa.containsKey('chave');
@@ -50,11 +50,11 @@ void main() {
   bool temValor = mapa.containsValue('John');
   print('Existe yma valor? $temValor');
 
-  print('Length-----------------------------------------');
+  print('Length--------------------------------------------');
   print('Quantidade de valores no mapa: ${mapa.length}');
   print('Quantidade de valores no mapa2: ${mapa2.length}');
   print('Quantidade de valores no mapa estados: ${estados.length}');
-  print('----------------------------------------------');
+  print('-------------------------------------------------');
 
   mapa.forEach((key, value) => print('$key, $value'));
   mapa2.forEach((key, value) => print('$key, $value'));
@@ -62,7 +62,7 @@ void main() {
   estados.forEach((key, value) {
     print('Sigla: $key  | Estado: $value');
   });
-  print('----------------------------------------------');
+  print('--------------------------------------------------');
 
   //Método para utilizar em Mapas: AddAll(), Remove(), clear(), isEmpty(), InNotEmpty()
   Map<int, String> disciplina = new Map();
@@ -76,26 +76,26 @@ void main() {
     5: 'Ciências'
   });
 
-  print('----------------------------------------------');
+  print('----------------------------------------------------');
   print('Mapa Disciplinas: $disciplina');
 
   //Remobendo informação remove()
   disciplina.remove(1);
-  print('----------------------------------------------');
+  print('----------------------------------------------------');
   print('Mapa Disciplinas: $disciplina');
 
   //Limpando o Map() com clear()
   disciplina.clear();
-  print('----------------------------------------------');
+  print('----------------------------------------------------');
   print('Mapa Disciplinas: $disciplina');
-  print('----------------------------------------------');
+  print('----------------------------------------------------');
 
   //Verificando se o mapa está vazio
   bool resposta1 = disciplina.isEmpty;
   bool resposta2 = disciplina.isNotEmpty;
   print('O mapa está vazio? $resposta1');
   print('O mapa não está vazio? $resposta2');
-  print('----------------------------------------------');
+  print('----------------------------------------------------');
 
   //Criando uma lista com um Map
   //Lista de Mapa
@@ -121,7 +121,7 @@ void main() {
   var media = total / notas.length;
 
   //Saída
-  print('map() where() reduce()-----------------------------------------');
+  print('map() where() reduce()--------------------------------');
   print('Soma das notas: $total');
   //Média com duas casas decimais toStringAsFixed
   print('Média: ${media.toStringAsFixed(2)}');
