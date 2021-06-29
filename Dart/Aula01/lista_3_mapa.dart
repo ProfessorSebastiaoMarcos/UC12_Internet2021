@@ -11,6 +11,7 @@ void main() {
   //Mapa para criar um objeto tipo Map()
   Map mapa = Map();
 //Chave --> valor
+
   mapa['chave'] = 10;
   mapa['chave2'] = 40;
   mapa['chave3'] = 50;
