@@ -1,4 +1,4 @@
-//Para criar uma classe usamos inical maiúscula
+//Para criar uma classe usamos inicial maiúscula
 //
 class Casa {
   //Criar os atributos
