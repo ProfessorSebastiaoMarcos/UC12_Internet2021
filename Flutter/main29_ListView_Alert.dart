@@ -1,4 +1,3 @@
-//List View
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
@@ -95,8 +94,6 @@ class _HomeState extends State<Home> {
                 onLongPress: () {
                   print('Clicou e segurou o $indice');
                 },
-                //Teste
-                //Exibindo os valores
                 title: Text(_produtos[indice]["titulo"]),
                 subtitle: Text(_produtos[indice]["descricao"]),
               );

@@ -1,14 +1,7 @@
-//Para consumir recursos é preciso implementar as
-//dependências do Flutter
-//ou seja, editar o arquivo pubspec.yaml
-//# Dependência HTTP
-////http: ^0.12.0+1
-//
-
 import 'package:flutter/material.dart';
 //Importando a dependência
 import 'package:http/http.dart' as http;
-//importar uma biblioteca conversora pa Json
+//importar uma biblioteca conversora para Json
 import 'dart:convert';
 
 main() => runApp(MaterialApp(
@@ -40,7 +33,7 @@ class _HomeState extends State<Home> {
 
     var response = await http.get(Uri.https(authority, path));
 
-    //Decodificand e passando para um Map
+    //Decodificando Json e passando para um Map
     Map<String, dynamic> objetoJason = json.decode(response.body);
 
     setState(() {

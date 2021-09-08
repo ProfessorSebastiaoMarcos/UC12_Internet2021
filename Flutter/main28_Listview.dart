@@ -1,7 +1,4 @@
-//ListView
-
 import 'package:flutter/material.dart';
-
 main() => runApp(MaterialApp(
       home: Home(),
     ));
@@ -10,10 +7,8 @@ class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
 }
-
 class _HomeState extends State<Home> {
   List _produtos = [];
-
   void _carregarItens() {
     //Para não repetir os itens
     _produtos = [];
@@ -27,12 +22,11 @@ class _HomeState extends State<Home> {
       _produtos.add(item);
     }
   }
-
   @override
   Widget build(BuildContext context) {
     //Carregando os itens
     _carregarItens();
-    
+
     return Scaffold(
       appBar: AppBar(
         title: Text('App ListView'),
@@ -75,7 +69,6 @@ class _HomeState extends State<Home> {
             icon: Icon(Icons.chat),
             label: 'Chat',
           ),
-
         ],
       ),
     );
